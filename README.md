@@ -8,5 +8,5 @@ adam optimizer has used to optimize parameters
 the learning rate i considered is 0.001
 and model trained for 201 epoch ( last one is just for draw the plot and completion of 200 epochs )
 i considered 2 step days sequence to predict 3th day. e.x first and second days data considered to predict 3th day close price.
-
+it also can save your model parameters, and if it have saved before you can skip training step
 at the end i have used FC layer to calculate and give me the 1 dimensional output.
