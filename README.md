@@ -1,12 +1,12 @@
 # ETH-LSTM
-prediction of Ethereum by PyTorch LSTM using (fastquant) ETH and BTC dataset.
+Ethereum Price Prediction Using PyTorch LSTM with Fastquant ETH and BTC Dataset
 
-i use lstm with 2 layers and 100 nodes for each one.
-1000 days of ETH and BTC data are fetched to train our model.
-sklearn minmaxScaler has used to normalize dataset.
-adam optimizer has used to optimize parameters
-the learning rate i considered is 0.001
-and model trained for 201 epoch ( last one is just for draw the plot and completion of 200 epochs )
-i considered 2 step days sequence to predict 3th day. e.x first and second days data considered to predict 3th day close price.
-it also can save your model parameters, and if it have saved before you can skip training step
-at the end i have used FC layer to calculate and give me the 1 dimensional output.
+This project uses a Long Short-Term Memory (LSTM) network implemented in PyTorch to predict Ethereum prices, leveraging the ETH and BTC dataset provided by Fastquant.
+
+The model architecture consists of two LSTM layers, each with 100 hidden units. A total of 1,000 days of historical data for both ETH and BTC is used to train the model. Prior to training, the dataset is normalized using sklearn’s MinMaxScaler.
+
+The Adam optimizer is used to update the model parameters, with a learning rate set to 0.001. Training is conducted over 201 epochs—the final epoch serves solely to generate the output plot and complete the 200 training cycles.
+
+The model is designed to use a two-day sequence of data to predict the closing price on the third day. For example, data from day one and day two are used to predict the closing price for day three.
+
+Model parameters can be saved after training. If saved parameters are available, the training phase can be skipped. A fully connected (FC) layer is used at the end to produce a single-dimensional output representing the predicted price.
